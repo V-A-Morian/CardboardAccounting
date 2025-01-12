@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{81C38A02-A6EE-4D8F-A6AB-7839F7ED8E9C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CardboardAccounting</RootNamespace>
+    <AssemblyName>CardboardAccounting</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\Desktop\WebSite\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>4</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3C4A7A2DB5F1B955670995586741C1E008CE7638</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>CardboardAccounting_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_blanks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_blanks.Designer.cs">
+      <DependentUpon>add_blanks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Send.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Send.Designer.cs">
+      <DependentUpon>Add_Send.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlmostFinal.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AlmostFinal.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Authorization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authorization.Designer.cs">
+      <DependentUpon>Authorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="blanks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="blanks.Designer.cs">
+      <DependentUpon>blanks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CADataSet.cs">
+      <DependentUpon>CADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CADataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CADataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CADataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CADataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CADataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CADataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CADataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CADataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CADataSet4.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="CADataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CADataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CADataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CADataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers.Designer.cs">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase.cs" />
+    <Compile Include="Add_Dispatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Dispatch.Designer.cs">
+      <DependentUpon>Add_Dispatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dispatch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dispatch.Designer.cs">
+      <DependentUpon>Dispatch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Orders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orders.Designer.cs">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Orders_table.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Orders_table.Designer.cs">
+      <DependentUpon>Orders_table.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZP.Designer.cs">
+      <DependentUpon>ZP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Materials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Materials.Designer.cs">
+      <DependentUpon>Materials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LeftOverCardboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LeftOverCardboard.Designer.cs">
+      <DependentUpon>LeftOverCardboard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add_blanks.resx">
+      <DependentUpon>add_blanks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Send.resx">
+      <DependentUpon>Add_Send.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authorization.resx">
+      <DependentUpon>Authorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_Dispatch.resx">
+      <DependentUpon>Add_Dispatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="blanks.resx">
+      <DependentUpon>blanks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers.resx">
+      <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dispatch.resx">
+      <DependentUpon>Dispatch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders.resx">
+      <DependentUpon>Orders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Orders_table.resx">
+      <DependentUpon>Orders_table.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZP.resx">
+      <DependentUpon>ZP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Materials.resx">
+      <DependentUpon>Materials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LeftOverCardboard.resx">
+      <DependentUpon>LeftOverCardboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="AlmostFinal.xsc">
+      <DependentUpon>AlmostFinal.xsd</DependentUpon>
+    </None>
+    <None Include="AlmostFinal.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AlmostFinal.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AlmostFinal.xss">
+      <DependentUpon>AlmostFinal.xsd</DependentUpon>
+    </None>
+    <None Include="CADataSet.xsc">
+      <DependentUpon>CADataSet.xsd</DependentUpon>
+    </None>
+    <Resource Include="CADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CADataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Resource>
+    <None Include="CADataSet.xss">
+      <DependentUpon>CADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CADataSet1.xsc">
+      <DependentUpon>CADataSet1.xsd</DependentUpon>
+    </None>
+    <Resource Include="CADataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CADataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Resource>
+    <None Include="CADataSet1.xss">
+      <DependentUpon>CADataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CADataSet2.xsc">
+      <DependentUpon>CADataSet2.xsd</DependentUpon>
+    </None>
+    <Resource Include="CADataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CADataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Resource>
+    <None Include="CADataSet2.xss">
+      <DependentUpon>CADataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CADataSet3.xsc">
+      <DependentUpon>CADataSet3.xsd</DependentUpon>
+    </None>
+    <Resource Include="CADataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CADataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Resource>
+    <None Include="CADataSet3.xss">
+      <DependentUpon>CADataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="CADataSet4.xsc">
+      <DependentUpon>CADataSet4.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Resource Include="CADataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CADataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <None Include="CADataSet4.xss">
+      <DependentUpon>CADataSet4.xsd</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CADataSet5.xsc">
+      <DependentUpon>CADataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="CADataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CADataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CADataSet5.xss">
+      <DependentUpon>CADataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="CADataSet6.xsc">
+      <DependentUpon>CADataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="CADataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CADataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CADataSet6.xss">
+      <DependentUpon>CADataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="CardboardAccounting_TemporaryKey.pfx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
